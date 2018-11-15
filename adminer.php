@@ -6,6 +6,7 @@
 * @license https://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
 * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License, version 2 (one or other)
 * @version 4.6.2
+
 */error_reporting(6135);$Uc=!preg_match('~^(unsafe_raw)?$~',ini_get("filter.default"));if($Uc||ini_get("filter.default_flags")){foreach(array('_GET','_POST','_COOKIE','_SERVER')as$X){$xi=filter_input_array(constant("INPUT$X"),FILTER_UNSAFE_RAW);if($xi)$$X=$xi;}}if(function_exists("mb_internal_encoding"))mb_internal_encoding("8bit");function
 connection(){global$f;return$f;}function
 adminer(){global$b;return$b;}function
